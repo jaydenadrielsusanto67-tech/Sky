@@ -1,0 +1,17 @@
+
+local Lighting = game:GetService("Lighting")
+
+local sky = Lighting:FindFirstChildOfClass("Sky")
+if not sky then
+    sky = Instance.new("Sky")
+    sky.Parent = Lighting
+end
+
+local id = "rbxassetid://YOUR_IMAGE_ID"
+
+sky.SkyboxBk = id
+sky.SkyboxDn = id
+sky.SkyboxFt = id
+sky.SkyboxLf = id
+sky.SkyboxRt = id
+sky.SkyboxUp = id
